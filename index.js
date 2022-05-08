@@ -51,8 +51,12 @@ app.all("*",(req,res)=>{ // ແມ່ນການດັກຈັບເວລາ 
 })
 
 // start app
-const port = process.env.PORT || 8080;
-
+const port = process.env.PORT || 8080; 
+/* env ເປັນ environment ຕອນທີ່ເຮົາ run application ຂຶ້ນມາເຮົາສາມາດກຳນົດໄດ້ວ່າ 
+environment port ເປັນເທົ່າໃດແລ້ວກໍສາມາດ Run ໂຕ app ຂອງເຮົານີ້ຕາມ environment ທີ່ປ່ຽນແປງໄປໄດ້ ໂດຍທີ່ເຮົາບໍ່ຈຳເປັນຕ້ອງຂຽນ
+CODE ເຊັກເບິ່ງວ່າ if ບ່ອນນີ້ໃຊ້ PORT ນີ້ PORT ນີ້ ເຮົາສາມາດຮັບມາຈາກ environment ຂອງເຄື່ອງທີ່ RUN APPlication ຂອງເຮົາໄດ້ເລີຍ
+c
+*/
 mongoose.connect('mongodb+srv://anouwath:power789@cluster0.fhcas.mongodb.net/mern-course?retryWrites=true&w=majority').then(()=>{ // import db
     console.log("Connect mongodb success");
     // const port = 4000;
